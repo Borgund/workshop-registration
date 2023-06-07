@@ -4,6 +4,9 @@ Inspiration:
 https://vercel.com/guides/nextjs-prisma-postgres
 https://codevoweb.com/how-to-setup-prisma-orm-in-nextjs-13-app-directory/?utm_content=cmp-true
 
+Todo:
+[ ] Email provider for Auth. EG: https://next-auth.js.org/providers/email
+
 ## Getting Started
 
 First, run the development server:

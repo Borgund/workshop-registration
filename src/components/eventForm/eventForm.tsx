@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styles from "./eventForm.module.scss";
 import { experimental_useFormStatus } from "react-dom";
 import { Event } from "@prisma/client";
+import { EventInput } from "@/types/event";
 
 type eventFormProps = {
   title?: string;
@@ -11,8 +12,6 @@ type eventFormProps = {
   endDate?: Date;
   action?: (event: EventInput) => void;
 };
-
-export type EventInput = Omit<Event, "id">;
 
 export default function EventForm({
   title,

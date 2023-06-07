@@ -14,7 +14,7 @@ const Menu = ({}: MenuProps) => {
         <ul>
           <MenuItem text="Home" href="/" icon="🏠" />
           <MenuItem text="Events" href="/events" icon="🗓️" />
-          <MenuItem text="Admin" href="/" icon="🧑‍💻" />
+          <MenuItem text="Admin" href="/admin" icon="🧑‍💻" admin />
           <li>
             <SignInButton />
             <AuthCheck>
