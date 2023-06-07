@@ -55,3 +55,38 @@ When updating the prisma schema you need to regenerate the prisma client.
 ```bash
 npx prisma generate
 ```
+
+## Versioning
+
+We are using release-please to handle releases and versioning:
+https://github.com/googleapis/release-please
+
+When the Release PR is merged, release-please takes the following steps:
+
+1. Updates your changelog file (for example CHANGELOG.md), along with other language specific files (for example package.json).
+2. Tags the commit with the version number
+3. Creates a GitHub Release based on the tag
+
+The most important prefixes you should have in mind are:
+
+fix: which represents bug fixes, and correlates to a SemVer patch.
+feat: which represents a new feature, and correlates to a SemVer minor.
+feat!:, or fix!:, refactor!:, etc., which represent a breaking change (indicated by the !) and will result in a SemVer major.
+
+### How do I change the version number?
+
+When a commit to the main branch has Release-As: x.x.x (case insensitive) in the commit body, Release Please will open a new pull request for the specified version.
+
+Empty commit example:
+
+```bash
+git commit --allow-empty -m "chore: release 2.0.0" -m "Release-As: 2.0.0"
+```
+
+results in the following commit message:
+
+```bash
+chore: release 2.0.0
+
+Release-As: 2.0.0
+```
