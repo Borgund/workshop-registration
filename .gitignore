@@ -18,6 +18,9 @@
 # misc
 .DS_Store
 *.pem
+.idea
+.vscode/
+*.env*
 
 # debug
 npm-debug.log*
@@ -34,5 +37,16 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-
-.env*
+# Prisma and misc from the internet.
+vendor/
+tmp/
+dist/
+tmp-resolvers
+flow-typed
+javascript/**/migrations/
+typescript/**/migrations/
+misc/**/migrations/
+databases/**/migrations/
+experimental/**/*.db
+.next
+dev.db
