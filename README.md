@@ -9,10 +9,6 @@ https://codevoweb.com/how-to-setup-prisma-orm-in-nextjs-13-app-directory/?utm_co
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
 ```
 
