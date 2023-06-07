@@ -1,0 +1,17 @@
+.nav {
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-start;
+    gap: 1rem;
+    a {
+      .active {
+        color: blue;
+      }
+      &:hover {
+        color: pink;
+      }
+    }
+  }
+}
