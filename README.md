@@ -61,6 +61,9 @@ npx prisma generate
 We are using release-please to handle releases and versioning:
 https://github.com/googleapis/release-please
 
+folowing:
+https://www.conventionalcommits.org/en/v1.0.0/
+
 When the Release PR is merged, release-please takes the following steps:
 
 1. Updates your changelog file (for example CHANGELOG.md), along with other language specific files (for example package.json).
