@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return { title: `Event page for ${event?.title}` };
 }
 
-export default async function EventPage({ params }: Props) {
+export default async function Page({ params }: Props) {
   const session = await getServerSession();
   const isSignedIn = !!session;
 

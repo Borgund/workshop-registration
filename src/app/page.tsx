@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
 
-export default function Home() {
+export default function Page() {
   return <main className={styles.main}>main</main>;
 }

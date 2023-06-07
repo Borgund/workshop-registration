@@ -4,7 +4,7 @@ import { Event } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
 import AdminLink from "@/components/auth/AdminLink";
 
-export const fetchEvents = async () => {
+const fetchEvents = async () => {
   const events: Event[] = await fetch("http://localhost:3000/api/events")
     .then((res) => res.json())
     .then((res) => JSON.parse(res));
@@ -16,7 +16,7 @@ async function getEvents() {
   });
 }
 
-export default async function Events() {
+export default async function Page() {
   //const events: Event[] = await getEvents();
   const events: Event[] = await getEvents();
   return (
