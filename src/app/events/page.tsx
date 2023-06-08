@@ -1,7 +1,7 @@
 import styles from "./page.module.scss";
 import { EventCard } from "@/components";
 import { Event } from "@prisma/client";
-import { prisma } from "@/lib/prisma";
+import prisma from "@/lib/prisma";
 import AdminLink from "@/components/auth/AdminLink";
 
 const fetchEvents = async () => {
@@ -16,7 +16,7 @@ async function getEvents() {
   });
 }
 
-export default async function Page() {
+export default async function EventPage() {
   //const events: Event[] = await getEvents();
   const events: Event[] = await getEvents();
   return (
